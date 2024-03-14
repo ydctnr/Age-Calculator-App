@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Age Calculator App</title>
+
+        <link rel="icon" type="image/png" sizes="32x32" href="https://github.com/ydctnr/Age-Calculator-App/blob/main/assets/images/favicon-32x32.png?raw=true">
+        <link rel="stylesheet" href="index.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <form id="dateForm">
+                    <div class="input">
+                        <div class="block">
+                            <label class="label" for="day">DAY</label>
+                            <input 
+                            type="text"
+                            name="day"
+                            id="day"
+                            placeholder="DD">
+                            <p class="error" id="dayError"></p>
+                        </div>
+                        <div class="block">
+                            <label class="label" for="month">MONTH</label>
+                            <input 
+                            type="text"
+                            name="month"
+                            id="month"
+                            placeholder="MM">
+                            <p class="error" id="monthError"></p>
+                        </div>
+                        <div class="block">
+                            <label class="label" for="year">YEAR</label>
+                            <input 
+                            type="text"
+                            name="year"
+                            id="year"
+                            placeholder="YYYY">
+                            <p class="error" id="yearError"></p>
+                        </div>
+                    </div>
+                    <div class="btn-wrapper">
+                        <button type="submit" class="btn-submit"><img src="https://raw.githubusercontent.com/ydctnr/Age-Calculator-App/6508d0737bca5746a817cb478fd91e7dee8f7d1c/assets/images/icon-arrow.svg" alt="icon"></button>
+                    </div>
+                </form>
+                <div class="results">
+                        <p class="result-text"><span class="years" id="ageYears">- -</span> years</p>
+                        <p class="result-text"><span class="months" id="ageMonths">- -</span> months</p>
+                        <p class="result-text"><span class="days" id="ageDays">- -</span> days</p>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
